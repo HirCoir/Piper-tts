@@ -12,9 +12,7 @@ for i in {5..1}; do
 done
 
 echo -e "\nExecuting Python command."
-
-%cd /kaggle/working/piper/src/python
-!python3 -m piper_train \
+python3 -m piper_train \
     --dataset-dir /kaggle/working/piper/my-training \
     --accelerator 'gpu' \
     --devices 1 \
